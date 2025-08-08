@@ -8,16 +8,22 @@ int main()
         printf("Enter a number: ");
         scanf("%d",&num);
         
-        if (num%2 == 0){
+        if (num == 0){
+         printf("Exiting program ... Bye\n");
+            break;
+        }
+        
+        else if (num%2 == 0){
             printf("%d is even\n",num);
         }
+
         else{
             printf("%d is odd\n",num);
         }
-        
-    } while (num != 0);
+    }
+while (num != 0);
 
-    printf("Exiting program ... Bye\n");
 
   return 0;
+
 }
